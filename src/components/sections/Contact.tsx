@@ -6,8 +6,14 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="mx-auto flex min-h-[85dvh] max-w-[1600px] flex-col justify-center px-6 py-28 md:px-12"
+      className="relative mx-auto flex min-h-[85dvh] max-w-[1600px] flex-col justify-center px-6 py-28 md:px-12"
     >
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute right-6 top-1/2 select-text font-mono text-2xl tracking-tight text-black md:right-12 md:text-4xl"
+      >
+        VAHID
+      </span>
       <Reveal className="label-xs mb-10">05 — Contact</Reveal>
       <Reveal stagger y={40}>
         <h3 className="display text-[12vw] leading-[0.88] sm:text-[11vw] md:text-[5.5vw]">
