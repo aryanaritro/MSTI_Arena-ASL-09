@@ -6,7 +6,11 @@ export function Journey() {
   return (
     <section className="border-y border-hairline bg-ink">
       <div className="mx-auto max-w-[1600px] px-6 py-24 md:px-12 md:py-36">
-        <SectionHeading index="10" title="Journey" aside="Direction, not a résumé" />
+        <SectionHeading
+          index="10"
+          title="Journey"
+          aside="Direction, not a résumé"
+        />
         <Reveal stagger>
           {journey.map((j) => (
             <div

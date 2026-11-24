@@ -142,7 +142,11 @@
     #000 38%,
     transparent 78%
   );
-  mask-image: radial-gradient(ellipse 72% 68% at 52% 42%, #000 38%, transparent 78%);
+  mask-image: radial-gradient(
+    ellipse 72% 68% at 52% 42%,
+    #000 38%,
+    transparent 78%
+  );
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -155,11 +159,16 @@
 }
 
 @keyframes about-orbit-spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes about-node-pulse {
-  50% { opacity: 0.45; box-shadow: 0 0 22px color-mix(in oklab, var(--primary) 70%, transparent); }
+  50% {
+    opacity: 0.45;
+    box-shadow: 0 0 22px color-mix(in oklab, var(--primary) 70%, transparent);
+  }
 }
 
 .about-orbit {
@@ -185,8 +194,16 @@
   box-shadow: 0 0 16px color-mix(in oklab, var(--primary) 70%, transparent);
 }
 
-.about-orbit-outer::before { top: 16%; left: 10%; }
-.about-orbit-outer::after { right: 6%; bottom: 28%; width: 4px; height: 4px; }
+.about-orbit-outer::before {
+  top: 16%;
+  left: 10%;
+}
+.about-orbit-outer::after {
+  right: 6%;
+  bottom: 28%;
+  width: 4px;
+  height: 4px;
+}
 
 .about-orbit-inner {
   width: 43%;
@@ -205,9 +222,20 @@
   animation: about-node-pulse 3.6s ease-in-out infinite;
 }
 
-.about-node-one { top: 23%; left: 27%; }
-.about-node-two { top: 47%; right: 21%; animation-delay: 1.2s; }
-.about-node-three { bottom: 23%; left: 37%; animation-delay: 2.4s; }
+.about-node-one {
+  top: 23%;
+  left: 27%;
+}
+.about-node-two {
+  top: 47%;
+  right: 21%;
+  animation-delay: 1.2s;
+}
+.about-node-three {
+  bottom: 23%;
+  left: 37%;
+  animation-delay: 2.4s;
+}
 
 .about-core {
   display: grid;
@@ -217,6 +245,12 @@
   justify-items: center;
   border: 1px solid color-mix(in oklab, var(--primary) 40%, transparent);
   border-radius: 50%;
-  background: radial-gradient(circle, color-mix(in oklab, var(--primary) 12%, var(--background)), var(--background) 72%);
-  box-shadow: 0 0 56px color-mix(in oklab, var(--primary) 10%, transparent), inset 0 0 28px color-mix(in oklab, var(--primary) 8%, transparent);
+  background: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--primary) 12%, var(--background)),
+    var(--background) 72%
+  );
+  box-shadow:
+    0 0 56px color-mix(in oklab, var(--primary) 10%, transparent),
+    inset 0 0 28px color-mix(in oklab, var(--primary) 8%, transparent);
 }

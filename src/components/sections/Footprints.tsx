@@ -24,7 +24,9 @@ export function Footprints() {
             key={capability.index}
             className="grid gap-4 border-b border-hairline py-7 md:grid-cols-[4rem_minmax(0,1fr)_minmax(0,1.2fr)] md:gap-8 md:py-9"
           >
-            <span className="label-xs text-muted-foreground">{capability.index}</span>
+            <span className="label-xs text-muted-foreground">
+              {capability.index}
+            </span>
             <h3 className="text-lg font-medium leading-snug sm:text-xl">
               {capability.title}
             </h3>

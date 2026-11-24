@@ -21,8 +21,8 @@ export function Preloader({ onDone }: { onDone: () => void }) {
       const tl = gsap.timeline();
 
       /*
-      * 1. Identity appears
-      */
+       * 1. Identity appears
+       */
       tl.to(content.current, {
         opacity: 1,
         y: 0,
@@ -31,8 +31,8 @@ export function Preloader({ onDone }: { onDone: () => void }) {
       })
 
         /*
-        * 2. Line draws
-        */
+         * 2. Line draws
+         */
         .to(
           line.current,
           {
@@ -44,15 +44,18 @@ export function Preloader({ onDone }: { onDone: () => void }) {
         )
 
         /*
-        * 3. Very short pause.
-        */
-        .to({}, {
-          duration: 0.01,
-        })
+         * 3. Very short pause.
+         */
+        .to(
+          {},
+          {
+            duration: 0.01,
+          },
+        )
 
         /*
-        * 4. Door opens.
-        */
+         * 4. Door opens.
+         */
         .to(
           leftPanel.current,
           {
@@ -74,16 +77,16 @@ export function Preloader({ onDone }: { onDone: () => void }) {
         )
 
         /*
-        * 5. Start Hero shortly after the doors begin opening.
-        *
-        * The black panels are still covering most of the screen,
-        * so the Hero entrance remains seamless.
-        */
+         * 5. Start Hero shortly after the doors begin opening.
+         *
+         * The black panels are still covering most of the screen,
+         * so the Hero entrance remains seamless.
+         */
         .call(onDone, [], "open+=0.15")
 
         /*
-        * 6. Remove preloader.
-        */
+         * 6. Remove preloader.
+         */
         .set(root.current, {
           display: "none",
         });
@@ -97,10 +100,7 @@ export function Preloader({ onDone }: { onDone: () => void }) {
   if (reduced) return null;
 
   return (
-    <div
-      ref={root}
-      className="fixed inset-0 z-[200] overflow-hidden bg-ink"
-    >
+    <div ref={root} className="fixed inset-0 z-[200] overflow-hidden bg-ink">
       {/* Left curtain */}
       <div
         ref={leftPanel}
@@ -130,9 +130,7 @@ export function Preloader({ onDone }: { onDone: () => void }) {
 
         {/* Centre */}
         <div className="flex flex-col items-center">
-          <span className="label-xs tracking-[0.3em]">
-            PORTFOLIO
-          </span>
+          <span className="label-xs tracking-[0.3em]">PORTFOLIO</span>
 
           <div className="mt-6 h-px w-full bg-hairline md:mt-8">
             <div

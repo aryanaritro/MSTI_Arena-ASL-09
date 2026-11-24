@@ -15,7 +15,11 @@ export function SectionHeading({
         <div className="label-xs mb-4">{index}</div>
         <h2 className="display text-4xl sm:text-5xl md:text-6xl">{title}</h2>
       </div>
-      {aside ? <p className="label-xs hidden max-w-[16rem] text-right md:block">{aside}</p> : null}
+      {aside ? (
+        <p className="label-xs hidden max-w-[16rem] text-right md:block">
+          {aside}
+        </p>
+      ) : null}
     </Reveal>
   );
 }

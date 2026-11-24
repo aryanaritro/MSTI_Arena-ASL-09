@@ -24,16 +24,19 @@ export function Contact() {
         </h3>
       </Reveal>
 
-      <Reveal delay={0.1} className="mt-12 max-w-md text-sm leading-relaxed text-muted-foreground">
-        For collaborations, software projects, web development, experiments or interesting
-        technical ideas.
-      </Reveal>
-      <div 
-        className="mt-4 flex flex-wrap items-center gap-x-12 gap-y-6 border-t border-hairline pt-10"
+      <Reveal
+        delay={0.1}
+        className="mt-12 max-w-md text-sm leading-relaxed text-muted-foreground"
       >
-        <MagneticLink 
-          href={profile.bookcall} external 
-          className="display link-underline text-3xl md:text-4xl">
+        For collaborations, software projects, web development, experiments or
+        interesting technical ideas.
+      </Reveal>
+      <div className="mt-4 flex flex-wrap items-center gap-x-12 gap-y-6 border-t border-hairline pt-10">
+        <MagneticLink
+          href={profile.bookcall}
+          external
+          className="display link-underline text-3xl md:text-4xl"
+        >
           Book a Call <span className="text-primary">→</span>
         </MagneticLink>
       </div>
@@ -47,15 +50,21 @@ export function Contact() {
         >
           Email me
         </MagneticLink>
-        <MagneticLink href={profile.linkedin} external className="label-xs link-underline !text-foreground">
+        <MagneticLink
+          href={profile.linkedin}
+          external
+          className="label-xs link-underline !text-foreground"
+        >
           LinkedIn
         </MagneticLink>
-        <MagneticLink href={profile.github} external className="label-xs link-underline !text-foreground">
+        <MagneticLink
+          href={profile.github}
+          external
+          className="label-xs link-underline !text-foreground"
+        >
           GitHub
         </MagneticLink>
-        
       </Reveal>
-      
     </section>
   );
 }

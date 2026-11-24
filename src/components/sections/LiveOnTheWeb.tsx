@@ -1,11 +1,21 @@
 /* LiveOnTheWeb */
-import { useRef, type CSSProperties, type PointerEvent as ReactPointerEvent } from "react";
+import {
+  useRef,
+  type CSSProperties,
+  type PointerEvent as ReactPointerEvent,
+} from "react";
 
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
 import { liveSites } from "@/lib/portfolio-data";
 
-export function LiveSiteCard({ site, index }: { site: (typeof liveSites)[number]; index: number }) {
+export function LiveSiteCard({
+  site,
+  index,
+}: {
+  site: (typeof liveSites)[number];
+  index: number;
+}) {
   const visualRef = useRef<HTMLDivElement>(null);
 
   /*
@@ -386,7 +396,9 @@ export function LiveSiteCard({ site, index }: { site: (typeof liveSites)[number]
             <div>
               <span className="label-xs mb-2 block">Technology</span>
 
-              <span className="text-sm text-muted-foreground">{site.tech.join(" / ")}</span>
+              <span className="text-sm text-muted-foreground">
+                {site.tech.join(" / ")}
+              </span>
             </div>
           </div>
 

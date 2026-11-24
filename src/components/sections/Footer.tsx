@@ -37,7 +37,10 @@ export function Footer() {
 
         <div className="mt-14 flex flex-wrap items-center justify-between gap-4 border-t border-hairline pt-6">
           <span className="label-xs">© 2026 {profile.name}</span>
-          <a href="#top" className="label-xs link-underline hover:!text-foreground">
+          <a
+            href="#top"
+            className="label-xs link-underline hover:!text-foreground"
+          >
             Back to top ↑
           </a>
         </div>

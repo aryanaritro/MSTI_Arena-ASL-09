@@ -74,7 +74,10 @@ export function Navigation() {
             <ul className="hidden items-center gap-8 md:flex">
               {LINKS.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="label-xs link-underline hover:!text-foreground">
+                  <a
+                    href={l.href}
+                    className="label-xs link-underline hover:!text-foreground"
+                  >
                     {l.label}
                   </a>
                 </li>

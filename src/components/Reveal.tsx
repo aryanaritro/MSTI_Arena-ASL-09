@@ -61,7 +61,11 @@ export function Reveal({
   }, []);
 
   return (
-    <Tag ref={ref as never} className={cn("opacity-0", className)} style={{ opacity: undefined }}>
+    <Tag
+      ref={ref as never}
+      className={cn("opacity-0", className)}
+      style={{ opacity: undefined }}
+    >
       {children}
     </Tag>
   );

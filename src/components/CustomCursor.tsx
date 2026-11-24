@@ -36,15 +36,27 @@ export function CustomCursor() {
     raf = requestAnimationFrame(loop);
 
     const over = (e: MouseEvent) => {
-      const t = (e.target as HTMLElement)?.closest?.("[data-cursor],a,button") as HTMLElement | null;
+      const t = (e.target as HTMLElement)?.closest?.(
+        "[data-cursor],a,button",
+      ) as HTMLElement | null;
       const text = t?.getAttribute?.("data-cursor");
       if (text) {
         l.textContent = text;
-        gsap.to(a, { scale: 3.4, opacity: 0.95, duration: 0.5, ease: "power3.out" });
+        gsap.to(a, {
+          scale: 3.4,
+          opacity: 0.95,
+          duration: 0.5,
+          ease: "power3.out",
+        });
         gsap.to(l, { opacity: 1, duration: 0.3 });
         gsap.to(d, { scale: 0, duration: 0.3 });
       } else if (t) {
-        gsap.to(a, { scale: 1.9, opacity: 0.8, duration: 0.45, ease: "power3.out" });
+        gsap.to(a, {
+          scale: 1.9,
+          opacity: 0.8,
+          duration: 0.45,
+          ease: "power3.out",
+        });
         gsap.to(d, { scale: 1.4, duration: 0.3 });
       }
     };
@@ -52,7 +64,12 @@ export function CustomCursor() {
     const out = (e: MouseEvent) => {
       const t = (e.target as HTMLElement)?.closest?.("[data-cursor],a,button");
       if (!t) return;
-      gsap.to(a, { scale: 1, opacity: 0.55, duration: 0.45, ease: "power3.out" });
+      gsap.to(a, {
+        scale: 1,
+        opacity: 0.55,
+        duration: 0.45,
+        ease: "power3.out",
+      });
       gsap.to(d, { scale: 1, duration: 0.3 });
       gsap.to(l, { opacity: 0, duration: 0.2 });
     };
@@ -73,7 +90,10 @@ export function CustomCursor() {
   if (!fine || reduced) return null;
 
   return (
-    <div aria-hidden className="pointer-events-none fixed inset-0 z-[100] hidden md:block">
+    <div
+      aria-hidden
+      className="pointer-events-none fixed inset-0 z-[100] hidden md:block"
+    >
       <div
         ref={aura}
         className="absolute -left-6 -top-6 grid h-12 w-12 place-items-center rounded-full opacity-55"
@@ -87,7 +107,10 @@ export function CustomCursor() {
           className="font-mono text-[3.2px] tracking-[0.2em] text-foreground opacity-0 uppercase"
         />
       </div>
-      <div className="absolute -left-[2px] -top-[2px] h-1 w-1 rounded-full bg-foreground" ref={dot} />
+      <div
+        className="absolute -left-[2px] -top-[2px] h-1 w-1 rounded-full bg-foreground"
+        ref={dot}
+      />
     </div>
   );
 }
