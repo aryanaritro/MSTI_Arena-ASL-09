@@ -31,7 +31,8 @@ export function MagneticLink({
         ease: "power3.out",
       });
     };
-    const leave = () => gsap.to(el, { x: 0, y: 0, duration: 0.9, ease: "elastic.out(1, 0.6)" });
+    const leave = () =>
+      gsap.to(el, { x: 0, y: 0, duration: 0.9, ease: "elastic.out(1, 0.6)" });
     el.addEventListener("mousemove", move);
     el.addEventListener("mouseleave", leave);
     return () => {

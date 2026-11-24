@@ -29,8 +29,13 @@ export function SelectedWork() {
                   loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover grayscale transition duration-700 ease-out group-hover:scale-[1.03] group-hover:grayscale-0"
                 />
-                <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-black/15 transition-opacity duration-500 group-hover:opacity-0" />
-                <span className="label-xs absolute left-4 top-4 z-10 text-white/80">{project.index}</span>
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 bg-black/15 transition-opacity duration-500 group-hover:opacity-0"
+                />
+                <span className="label-xs absolute left-4 top-4 z-10 text-white/80">
+                  {project.index}
+                </span>
                 {project.url ? (
                   <a
                     href={project.url}
@@ -44,9 +49,12 @@ export function SelectedWork() {
 
               <div className="flex flex-1 flex-col border-b border-white/10 py-5 transition-colors duration-500 group-hover:border-primary/30">
                 <p className="label-xs mb-2 text-muted-foreground transition-colors group-hover:text-primary">
-                  {project.category} <span className="px-1 text-white/25">/</span> {project.year}
+                  {project.category}{" "}
+                  <span className="px-1 text-white/25">/</span> {project.year}
                 </p>
-                <h3 className="display text-2xl leading-tight sm:text-3xl">{project.name}</h3>
+                <h3 className="display text-2xl leading-tight sm:text-3xl">
+                  {project.name}
+                </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {project.description}
                 </p>
@@ -54,7 +62,9 @@ export function SelectedWork() {
                   {project.tech.join(" · ")}
                 </p>
                 <div className="mt-auto flex items-center justify-between gap-3 pt-5">
-                  <span className="label-xs !tracking-[0.12em]">{project.status}</span>
+                  <span className="label-xs !tracking-[0.12em]">
+                    {project.status}
+                  </span>
                   {project.url ? (
                     <a
                       href={project.url}
@@ -65,7 +75,9 @@ export function SelectedWork() {
                       Visit <span aria-hidden="true">↗</span>
                     </a>
                   ) : (
-                    <span className="label-xs text-muted-foreground/60">In progress</span>
+                    <span className="label-xs text-muted-foreground/60">
+                      In progress
+                    </span>
                   )}
                 </div>
               </div>

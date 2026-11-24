@@ -23,7 +23,9 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
     gsap.ticker.lagSmoothing(0);
 
     const onAnchor = (e: MouseEvent) => {
-      const el = (e.target as HTMLElement)?.closest?.('a[href^="#"]') as HTMLAnchorElement | null;
+      const el = (e.target as HTMLElement)?.closest?.(
+        'a[href^="#"]',
+      ) as HTMLAnchorElement | null;
       if (!el) return;
       const id = el.getAttribute("href");
       if (!id || id === "#") return;

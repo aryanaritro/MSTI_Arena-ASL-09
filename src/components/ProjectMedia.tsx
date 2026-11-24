@@ -37,7 +37,12 @@ export function ProjectMedia({
       gsap.to(el.querySelector("img"), {
         yPercent: -6,
         ease: "none",
-        scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: true },
+        scrollTrigger: {
+          trigger: el,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
       });
     }, el);
     return () => ctx.revert();
@@ -46,7 +51,11 @@ export function ProjectMedia({
   return (
     <div
       ref={wrap}
-      className={cn("grain group/media relative overflow-hidden bg-surface", ratio, className)}
+      className={cn(
+        "grain group/media relative overflow-hidden bg-surface",
+        ratio,
+        className,
+      )}
     >
       <img
         src={src}
@@ -57,7 +66,10 @@ export function ProjectMedia({
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
-        style={{ background: "linear-gradient(to top, var(--background) 2%, transparent 60%)" }}
+        style={{
+          background:
+            "linear-gradient(to top, var(--background) 2%, transparent 60%)",
+        }}
       />
     </div>
   );

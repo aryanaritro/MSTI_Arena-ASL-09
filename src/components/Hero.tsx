@@ -76,8 +76,8 @@ export function Hero({ ready }: { ready: boolean }) {
             ))}
           </h1>
           <p className="hero-fade mt-8 max-w-md text-sm leading-relaxed text-muted-foreground opacity-0">
-            Developer, innovator and technologist, building softwares, websites and
-            intelligent systems — with an engineer's instinct underneath.
+            Developer, innovator and technologist, building softwares, websites
+            and intelligent systems — with an engineer's instinct underneath.
           </p>
           <div className="hero-fade mt-10 flex flex-wrap gap-x-8 gap-y-2 opacity-0">
             {/* <span className="label-xs">Available for collaboration</span> */}
@@ -85,14 +85,22 @@ export function Hero({ ready }: { ready: boolean }) {
         </div>
 
         <div className="order-1 min-w-0 md:order-2">
-          <div ref={img} className="relative mx-auto w-full max-w-[520px] md:max-w-none">
+          <div
+            ref={img}
+            className="relative mx-auto w-full max-w-[520px] md:max-w-none"
+          >
             <img
               src={portrait}
               alt="Portrait of Aryan Aritro in profile, lit against a black background"
               width={1024}
               height={1024}
               className="w-full contrast-125 grayscale"
-              style={{ WebkitMaskImage: "radial-gradient(ellipse 68% 72% at 50% 48%, black 25%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.55) 70%, transparent 100%)", maskImage: "radial-gradient(ellipse 68% 72% at 50% 48%, black 25%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.55) 70%, transparent 100%)", }}
+              style={{
+                WebkitMaskImage:
+                  "radial-gradient(ellipse 68% 72% at 50% 48%, black 25%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.55) 70%, transparent 100%)",
+                maskImage:
+                  "radial-gradient(ellipse 68% 72% at 50% 48%, black 25%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.55) 70%, transparent 100%)",
+              }}
             />
             <div
               aria-hidden
@@ -123,7 +131,10 @@ export function Hero({ ready }: { ready: boolean }) {
       <div className="pointer-events-none absolute inset-x-6 bottom-6 flex items-end justify-between md:inset-x-12 md:bottom-8">
         <span className="animate-pulse text-lg text-primary">↓</span>
       </div>
-      <div aria-hidden className="absolute inset-x-0 bottom-0 h-px bg-hairline" />
+      <div
+        aria-hidden
+        className="absolute inset-x-0 bottom-0 h-px bg-hairline"
+      />
     </section>
   );
 }

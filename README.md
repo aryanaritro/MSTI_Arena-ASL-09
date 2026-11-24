@@ -4,7 +4,6 @@
 
 ### A modern, and responsive personal portfolio.
 
-
 **A digital introduction to my skills, projects, and professional background.**
 
 ![](public/overview.png)
@@ -32,13 +31,13 @@ It showcases portfolio components through a clean visual interface while maintai
 
 ## Website Sections
 
-| Section | Description |
-|---|---|
-| Home | Introduction and portfolio landing section |
+| Section  | Description                                    |
+| -------- | ---------------------------------------------- |
+| Home     | Introduction and portfolio landing section     |
 | About Me | Personal background and professional interests |
-| Skills | Overview of technical skills |
-| Projects | Selected projects with descriptions and links |
-| Contact | Contact information and communication options |
+| Skills   | Overview of technical skills                   |
+| Projects | Selected projects with descriptions and links  |
+| Contact  | Contact information and communication options  |
 
 ## Design Philosophy
 
@@ -57,11 +56,11 @@ Key design considerations:
 
 The interface is designed to accommodate different screen sizes:
 
-| Device | Design Focus |
-|---|---|
-| Desktop | Full layout and navigation |
-| Tablet | Adapted spacing and component arrangement |
-| Mobile | Compact layout and accessible navigation |
+| Device  | Design Focus                              |
+| ------- | ----------------------------------------- |
+| Desktop | Full layout and navigation                |
+| Tablet  | Adapted spacing and component arrangement |
+| Mobile  | Compact layout and accessible navigation  |
 
 ## Technology Stack
 
@@ -95,7 +94,7 @@ Start the development server:
 npm run dev
 ```
 
-*Adjust the commands according to the actual project setup.*
+_Adjust the commands according to the actual project setup._
 
 ## 🌐 Deployment
 
@@ -105,24 +104,24 @@ The website is deployed and accessible online:
 
 ## Competition Information
 
-| Field | Details |
-|---|---|
-| Competition | ASL National Arena |
-| Challenge | #09 |
-| Category | Software Development |
-| Project | Personal Portfolio Website |
-| Maximum Score | 100 Points |
-| Submission Format | GitHub |
+| Field             | Details                    |
+| ----------------- | -------------------------- |
+| Competition       | ASL National Arena         |
+| Challenge         | #09                        |
+| Category          | Software Development       |
+| Project           | Personal Portfolio Website |
+| Maximum Score     | 100 Points                 |
+| Submission Format | GitHub                     |
 
 ### Evaluation Milestones
 
-| Milestone | Description | Points |
-|---|---|---:|
-| 01 | Design & Aesthetics | 30 |
-| 02 | Responsiveness & UI/UX | 30 |
-| 03 | Content & Functionality | 30 |
-| 04 | Code Quality & Deployment | 10 |
-| | **Total** | **100** |
+| Milestone | Description               |  Points |
+| --------- | ------------------------- | ------: |
+| 01        | Design & Aesthetics       |      30 |
+| 02        | Responsiveness & UI/UX    |      30 |
+| 03        | Content & Functionality   |      30 |
+| 04        | Code Quality & Deployment |      10 |
+|           | **Total**                 | **100** |
 
 ## Developer
 

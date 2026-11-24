@@ -20,10 +20,10 @@ export const profile = {
   tagline: "Enthusiast, Developer, Innovator.",
   headline: ["I turn", "imaginations", "into systems."],
   location: "Mymensingh, Bangladesh",
-  email: "knowledgeexplorar@gmail.com", 
+  email: "knowledgeexplorar@gmail.com",
   github: "https://github.com/aryanaritro",
   linkedin: "https://linkedin.com/in/aryanaritro",
-  bookcall: "https://cal.com/v.-aryan-kabir-ebhxxk/30min" 
+  bookcall: "https://cal.com/v.-aryan-kabir-ebhxxk/30min",
 };
 
 //=========Workfield Card Data===========
@@ -41,13 +41,7 @@ export const capabilities: Capability[] = [
     title: "Frontend Development",
     description:
       "Responsive interfaces and digital experiences built with modern frontend technologies.",
-    tech: [
-      "React",
-      "TypeScript",
-      "TypeScript JSX",
-      "Tailwind CSS",
-      "Vite",
-    ],
+    tech: ["React", "TypeScript", "TypeScript JSX", "Tailwind CSS", "Vite"],
   },
   {
     index: "02",
@@ -79,48 +73,32 @@ export const capabilities: Capability[] = [
     ],
   },
   {
-  index: "04",
-  title: "UI / Graphic Design",
-  description:
-    "Interface design, visual systems and digital graphics focused on clarity, consistency and visual identity.",
-  tech: [
-    "Figma",
-    "UI Design",
-    "Graphic Design",
-    "Visual Systems",
-  ],
-},
-{
-  index: "05",
-  title: "AI & Smart Assistants",
-  description:
-    "Intelligent tools and personal assistant systems combining voice interaction, automation and application logic.",
-  tech: [
-    "Python",
-    "AI Integration",
-    "Voice Interfaces",
-    "Automation",
-  ],
-},
+    index: "04",
+    title: "UI / Graphic Design",
+    description:
+      "Interface design, visual systems and digital graphics focused on clarity, consistency and visual identity.",
+    tech: ["Figma", "UI Design", "Graphic Design", "Visual Systems"],
+  },
+  {
+    index: "05",
+    title: "AI & Smart Assistants",
+    description:
+      "Intelligent tools and personal assistant systems combining voice interaction, automation and application logic.",
+    tech: ["Python", "AI Integration", "Voice Interfaces", "Automation"],
+  },
   {
     index: "06",
     title: "Embedded Systems & Mechatronics",
     description:
       "Microcontroller-based systems combining electronics, firmware, control logic and physical hardware.",
-    tech: [
-      "Microcontrollers",
-      "Hardware-software integration",
-    ],
+    tech: ["Microcontrollers", "Hardware-software integration"],
   },
 ];
 
 //=========Projects Data===========
 
 export type ProjectCategory =
-  | "Websites"
-  | "Software"
-  | "Embedded Systems"
-  | "Experiments";
+  "Websites" | "Software" | "Embedded Systems" | "Experiments";
 
 export type Project = {
   index: string;
@@ -141,8 +119,7 @@ export const projects: Project[] = [
     index: "01",
     name: "ARYTHIC.",
     category: "Websites",
-    description:
-      "A Platform for Digital Solutions, Ideas, and Research.",
+    description: "A Platform for Digital Solutions, Ideas, and Research.",
     tech: [
       "TypeScript JSX",
       "TypeScript",
@@ -158,8 +135,6 @@ export const projects: Project[] = [
     role: "Design & Development",
     image: arythic,
     url: "https://arythic.vercel.app",
-    
-  
   },
   {
     index: "02",
@@ -167,33 +142,54 @@ export const projects: Project[] = [
     category: "Websites",
     description:
       "A modern & contemporary fashion E-commerce website blending classical aesthetics with contemporary design.",
-    tech: [ "TypeScript JSX", "TypeScript", "HTML", "CSS", "Tailwind CSS", "React", "Vite", "Vercel" ],
+    tech: [
+      "TypeScript JSX",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "React",
+      "Vite",
+      "Vercel",
+    ],
     role: "Design & Development",
     year: "2026",
     status: "Under development",
     image: ArshiNagar,
     url: "https://arshinagar-fashion.vercel.app",
-    
   },
   {
-  
-  index: "03",
-  name: "Resource Library-MEC",
-  category: "Websites",
-  description:
+    index: "03",
+    name: "Resource Library-MEC",
+    category: "Websites",
+    description:
       "Academic resources, assignment tools, printing services, and student communities — brought together for MEC students.",
-  tech: [ "TypeScript JSX", "TypeScript", "HTML", "CSS", "Tailwind CSS", "React", "Vite", "Vercel", "Supabase", "PostgreSQL", "REST API", "Backblaze B2" ],
-  role: "Design & Development",
-  year: "2026",
-  status: "Live",
-  image: resourcelibrary,
-  url: "https://resourcelibrary-mec.vercel.app/resources",
-},
+    tech: [
+      "TypeScript JSX",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "React",
+      "Vite",
+      "Vercel",
+      "Supabase",
+      "PostgreSQL",
+      "REST API",
+      "Backblaze B2",
+    ],
+    role: "Design & Development",
+    year: "2026",
+    status: "Live",
+    image: resourcelibrary,
+    url: "https://resourcelibrary-mec.vercel.app/resources",
+  },
   {
     index: "04",
     name: "NEXUS 2.0",
     category: "Embedded Systems",
-    description:"A modular Microcontroller-based control hub designed as the central interface for embedded hardware systems, and expandable modules for robotics, automation, and IoT experiments.",
+    description:
+      "A modular Microcontroller-based control hub designed as the central interface for embedded hardware systems, and expandable modules for robotics, automation, and IoT experiments.",
     tech: ["Microcontrollers", "Arduino C++", "Embedded Systems"],
     year: "2025",
     status: "Version 2.0",
@@ -213,21 +209,49 @@ export type Site = {
 
 //=========
 
-
 export const skillGroups: { title: string; items: string[] }[] = [
-  { title: "Programming", items: ["C", "C++", "Python", "JavaScript", "TypeScript"] },
+  {
+    title: "Programming",
+    items: ["C", "C++", "Python", "JavaScript", "TypeScript"],
+  },
   { title: "Web", items: ["HTML", "CSS", "React", "Tailwind CSS"] },
   { title: "Software", items: ["Application logic", "Tooling", "Automation"] },
-  { title: "AI", items: ["Assistant systems", "Automation", "Intelligent tools"] },
-  { title: "Embedded", items: ["Microcontrollers", "Electronics", "Embedded systems"] },
+  {
+    title: "AI",
+    items: ["Assistant systems", "Automation", "Intelligent tools"],
+  },
+  {
+    title: "Embedded",
+    items: ["Microcontrollers", "Electronics", "Embedded systems"],
+  },
   { title: "Design", items: ["Graphic design", "UI design", "Visual systems"] },
   { title: "Tools", items: ["Git", "VS Code", "Figma"] },
 ];
 
 export const journey: { phase: string; when: string; note: string }[] = [
-  { phase: "Education", when: "Ongoing", note: "Electrical & Electronic Engineering, Mymensingh Engineering College." },
-  { phase: "Building", when: "Ongoing", note: "Websites, tools and software systems built end to end." },
-  { phase: "Published", when: "2025 —", note: "Live products shipped to the open web." },
-  { phase: "Experimenting", when: "2025 —", note: "AI assistants, automation and embedded crossovers." },
-  { phase: "Developing", when: "Now", note: "Deeper systems, cleaner architecture, better craft." },
+  {
+    phase: "Education",
+    when: "Ongoing",
+    note: "Electrical & Electronic Engineering, Mymensingh Engineering College.",
+  },
+  {
+    phase: "Building",
+    when: "Ongoing",
+    note: "Websites, tools and software systems built end to end.",
+  },
+  {
+    phase: "Published",
+    when: "2025 —",
+    note: "Live products shipped to the open web.",
+  },
+  {
+    phase: "Experimenting",
+    when: "2025 —",
+    note: "AI assistants, automation and embedded crossovers.",
+  },
+  {
+    phase: "Developing",
+    when: "Now",
+    note: "Deeper systems, cleaner architecture, better craft.",
+  },
 ];

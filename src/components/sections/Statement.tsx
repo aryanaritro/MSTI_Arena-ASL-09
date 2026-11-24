@@ -17,7 +17,10 @@ export function Statement() {
       >
         <p className="label-xs">Statement</p>
         <p className="max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-          My workfield moves across Software, Web, Intelligent systems, AI, design, and engineering. I enjoy working between disciplines, where software meets hardware, code meets design, and ideas are tested through Innovation.
+          My workfield moves across Software, Web, Intelligent systems, AI,
+          design, and engineering. I enjoy working between disciplines, where
+          software meets hardware, code meets design, and ideas are tested
+          through Innovation.
         </p>
       </Reveal>
     </section>
